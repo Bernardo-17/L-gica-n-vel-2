@@ -1,1 +1,0 @@
-# L-gica-n-vel-2
