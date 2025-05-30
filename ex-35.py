@@ -5,16 +5,16 @@
 #da gasolina é R$ 3,30 e o preço do litro do álcool é R$ 2,90. 
 tipo_combustivel = input('Digite o combustivel: ' )
 if tipo_combustivel =='Gasolina':
-    combustivel = int(input(f'Digite a quantidade de Litros desejados de {tipo_combustivel}: '))
-    if combustivel <= 20:
-        print(f'O valor de: R${combustivel * 2.90 - ((combustivel * 2.90) * 0.04):.2f} ')
-    elif combustivel > 20:
-        print(f'O valor de: R${combustivel * 2.90 - ((combustivel * 2.90)* 0.06):.2f} ')
+    quantidade_combustivel = int(input(f'Digite a quantidade de litros desejados de gasolina: '))
+    if quantidade_combustivel <= 20:
+        print(f'O valor de: R${quantidade_combustivel * 2.90 - ((quantidade_combustivel * 2.90) * 0.04):.2f} ')
+    elif quantidade_combustivel > 20:
+        print(f'O valor de: R${quantidade_combustivel * 2.90 - ((quantidade_combustivel * 2.90)* 0.06):.2f} ')
 elif tipo_combustivel =='Álcool':
-    combustivel = int(input(f'Digite a quantidade de Litros desejados {tipo_combustivel}: '))
-    if combustivel <= 20:
-        print(f'O valor de: R${combustivel * 3.30 - ((combustivel * 3.30) * 0.03):.2f} ')
-    elif combustivel > 20:
-        print(f'O valor de: R${combustivel * 3.30 - ((combustivel * 3.30) * 0.05):.2f} ')
+    quantidade_combustivel = int(input(f'Digite a quantidade de litros desejados álcool: '))
+    if quantidade_combustivel <= 20:
+        print(f'O valor de: R${quantidade_combustivel * 3.30 - ((quantidade_combustivel * 3.30) * 0.03):.2f} ')
+    elif quantidade_combustivel > 20:
+        print(f'O valor de: R${quantidade_combustivel* 3.30 - ((quantidade_combustivel * 3.30) * 0.05):.2f} ')
 else:
     print('Algo foi digitado incorretamente')
