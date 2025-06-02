@@ -8,3 +8,5 @@ homemN = int(input('Digite a idade do homem mais novo: '))
 homemV = int(input('Digite a idade do homem mais velho: '))
 if homemV > homemN and mulherV > mulherN:
     print(f'A soma das idade do homem mais velho e a mulher mais nova é: {homemV} + {mulherN} = {homemV + mulherN}.\nA soma do homem mais novo com a mulher mais velha é: {homemN} + {mulherV} = {homemN + mulherV}.')
+else:
+    print('Algo foi digitado incorretamente.')
